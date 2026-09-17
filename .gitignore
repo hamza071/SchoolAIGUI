@@ -1,0 +1,21 @@
+# Virtualenvs / Python artefacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Agent / tooling session state (local only)
+.reasonix/
+
+# Local secrets and debug output -- NEVER commit these
+schoolai_config.json
+.schoolai/
+*.sse.log
+*.log

@@ -1,0 +1,11 @@
+# Runtime dependencies for the SchoolAI local coding harness.
+# tkinter ships with the standard library and is NOT listed here
+# (macOS: install python.org Python, or `brew install python-tk`, if missing).
+requests>=2.31.0
+
+# Pinned below 2.x on purpose.
+# This machine's system Python is linked against LibreSSL 2.8.3 (and the same is
+# true for many Xcode/homebrew builds). urllib3 2.x only supports OpenSSL
+# 1.1.1+ and emits a NotOpenSSLWarning on every run; 1.26.x is fully supported
+# there and is the recommended combination for that environment.
+urllib3<2
